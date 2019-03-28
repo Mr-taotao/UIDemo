@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="StartStyle" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowBackground">@drawable/shape_launch</item>
+    </style>
+
+    <style name="EditText_Theme" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textSize">@dimen/toolbar_title_tx</item>
+        <item name="colorControlNormal">@color/toolbar_button</item>
+    </style>
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">@color/card_view_bg</item>
+        <item name="android:textColor">@color/item_title</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="popupTheme">@style/ToolbarPopupTheme</item>
+        <item name="theme">@style/ToolBarTheme</item>
+    </style>
+
+    <style name="ToolbarSearchStyle" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">@dimen/margin_0</item>
+        <item name="contentInsetStartWithNavigation">@dimen/margin_0</item>
+        <item name="theme">@style/ToolBarTheme</item>
+    </style>
+
+    <style name="TabLayoutStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Design.Tab" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/design_tab_text_size</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+</resources>
